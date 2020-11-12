@@ -10,6 +10,34 @@ import UIKit
 
 class ButtonDirector {
     
+    static func makeBottomButton() -> UIButton {
+        let titleColor = UIColor(red: 1, green: 192/255, blue: 0, alpha: 1)
+        let highLightColor = titleColor.withAlphaComponent(0.4)
+        let bgColor = UIColor(red: 51/255, green: 59/255, blue: 67/255, alpha: 1)
+        let font = UIFont.boldSystemFont(ofSize: 17)
+        let radius: CGFloat = 8
+        
+        let screenFrame = UIScreen.main.bounds
+        let screenSize = screenFrame.size
+        let margin: CGFloat = 12.0
+        let height: CGFloat = 45.0
+        let size = CGSize(width: screenSize.width - (margin * 2), height: height)
+        let point = CGPoint(x: margin, y: screenSize.height - height - (margin * 2))
+        let frame = CGRect(origin: point, size: size)
+        
+        
+        let builder = ButtonConcreteBuilder()
+            .setBGColor(bgColor)
+            .setTitleColor(titleColor)
+            .setTitleHighlightedColor(highLightColor)
+            .setFont(font)
+            .setFrame(frame)
+            .setRadius(radius)
+            .setTitle("Bottom")
+        
+        return builder.build()
+    }
+    
     private static func makePayBuilder() -> ButtonBuilder {
         let titleColor = UIColor(red: 1, green: 192/255, blue: 0, alpha: 1)
         let highLightColor = titleColor.withAlphaComponent(0.4)
@@ -42,7 +70,7 @@ class ButtonDirector {
         
         let builder = makePayBuilder().setTitle(title)
         
-        return builder.product
+        return builder.build()
     }
     
     static func makeTogetherButton() -> UIButton {
@@ -66,6 +94,6 @@ class ButtonDirector {
             .setRadius(size.height / 2)
             .setTitleHighlightedColor(color.withAlphaComponent(0.7))
         
-        return builder.product
+        return builder.build()
     }
 }

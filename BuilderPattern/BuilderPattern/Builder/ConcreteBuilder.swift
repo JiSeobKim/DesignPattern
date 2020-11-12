@@ -8,7 +8,7 @@
 import UIKit
 
 class ButtonConcreteBuilder: ButtonBuilder {
-    var product = UIButton()
+    private var product = UIButton()
     
     func setTitle(_ title: String) -> ButtonBuilder {
         self.product.setTitle(title, for: .normal)
@@ -49,4 +49,9 @@ class ButtonConcreteBuilder: ButtonBuilder {
         self.product.layer.borderColor = color.cgColor
         return self
     }
+    
+    func build() -> UIButton {
+        return self.product
+    }
+    
 }

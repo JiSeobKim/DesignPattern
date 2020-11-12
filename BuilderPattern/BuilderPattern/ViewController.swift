@@ -17,9 +17,14 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.addButtons()
+        self.addBottom()
+//        self.addButtons()
 //        self.addMultiPayButton()
+    }
+    
+    private func addBottom() {
+        let bottomButton = ButtonDirector.makeBottomButton()
+        self.view.addSubview(bottomButton)
     }
     
     private func addButtons() {

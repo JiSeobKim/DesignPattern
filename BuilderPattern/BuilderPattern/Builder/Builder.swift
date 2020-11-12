@@ -9,8 +9,6 @@ import UIKit
 
 protocol ButtonBuilder {
     
-    var product: UIButton { get }
-    
     func setTitle(_ title: String) -> ButtonBuilder
     func setTitleColor(_ color: UIColor) -> ButtonBuilder
     func setBGColor(_ color: UIColor) -> ButtonBuilder
@@ -19,4 +17,6 @@ protocol ButtonBuilder {
     func setRadius(_ radius: CGFloat) -> ButtonBuilder
     func setTitleHighlightedColor(_ color: UIColor) -> ButtonBuilder
     func setBolder(color: UIColor, width: CGFloat) -> ButtonBuilder
+    
+    func build() -> UIButton
 }
