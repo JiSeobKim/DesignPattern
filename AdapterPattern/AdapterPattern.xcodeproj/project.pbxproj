@@ -13,7 +13,6 @@
 		6BBE842125629AF50054E846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE841F25629AF50054E846 /* Main.storyboard */; };
 		6BBE842325629AF60054E846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE842225629AF60054E846 /* Assets.xcassets */; };
 		6BBE842625629AF60054E846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBE842425629AF60054E846 /* LaunchScreen.storyboard */; };
-		6BBE842F25629B340054E846 /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE842E25629B340054E846 /* TestAPI.swift */; };
 		6BBE843225629F8E0054E846 /* NeoAdapterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE843125629F8E0054E846 /* NeoAdapterAPI.swift */; };
 		6BBE84352562A80A0054E846 /* NeoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBE84342562A80A0054E846 /* NeoAPI.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		6BBE842225629AF60054E846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BBE842525629AF60054E846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BBE842725629AF60054E846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BBE842E25629B340054E846 /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		6BBE843125629F8E0054E846 /* NeoAdapterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoAdapterAPI.swift; sourceTree = "<group>"; };
 		6BBE84342562A80A0054E846 /* NeoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +65,6 @@
 				6BBE841D25629AF50054E846 /* ViewController.swift */,
 				6BBE843125629F8E0054E846 /* NeoAdapterAPI.swift */,
 				6BBE84342562A80A0054E846 /* NeoAPI.swift */,
-				6BBE842E25629B340054E846 /* TestAPI.swift */,
 				6BBE841F25629AF50054E846 /* Main.storyboard */,
 				6BBE842225629AF60054E846 /* Assets.xcassets */,
 				6BBE842425629AF60054E846 /* LaunchScreen.storyboard */,
@@ -149,7 +146,6 @@
 				6BBE843225629F8E0054E846 /* NeoAdapterAPI.swift in Sources */,
 				6BBE841E25629AF50054E846 /* ViewController.swift in Sources */,
 				6BBE841A25629AF50054E846 /* AppDelegate.swift in Sources */,
-				6BBE842F25629B340054E846 /* TestAPI.swift in Sources */,
 				6BBE841C25629AF50054E846 /* SceneDelegate.swift in Sources */,
 				6BBE84352562A80A0054E846 /* NeoAPI.swift in Sources */,
 			);
@@ -301,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 689KAW4595;
 				INFOPLIST_FILE = AdapterPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JS.DesignPattern.AdapterPattern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 689KAW4595;
 				INFOPLIST_FILE = AdapterPattern/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.JS.DesignPattern.AdapterPattern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
